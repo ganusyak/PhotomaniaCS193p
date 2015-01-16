@@ -59,6 +59,7 @@
 		A90D7FA519F9BC5C0064A2ED /* photomanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = photomanTests.m; sourceTree = "<group>"; };
 		A90D7FE019F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUMostSeenPhotosCDTVC.h; sourceTree = "<group>"; };
 		A90D7FE119F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUMostSeenPhotosCDTVC.m; sourceTree = "<group>"; };
+		A93CC8981A68B99500AEBD39 /* GNUCoreDataKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUCoreDataKeys.h; path = photoman/GNUCoreDataKeys.h; sourceTree = "<group>"; };
 		A97BF82B19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUShowRecentlyViewedPhotos.h; sourceTree = "<group>"; };
 		A97BF82C19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUShowRecentlyViewedPhotos.m; sourceTree = "<group>"; };
 		A97BF83B19FDD9F400C44EE0 /* GNUFlickrDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUFlickrDownloader.h; path = photoman/GNUFlickrDownloader.h; sourceTree = "<group>"; };
@@ -192,6 +193,7 @@
 			children = (
 				A90D7FD819F9C1080064A2ED /* CoreDataTableViewController */,
 				A90D7F8D19F9BC5C0064A2ED /* photoman.xcdatamodeld */,
+				A93CC8981A68B99500AEBD39 /* GNUCoreDataKeys.h */,
 				A9AFBB9A1A68A8CD00B21BD9 /* Country.h */,
 				A9AFBB9B1A68A8CD00B21BD9 /* Country.m */,
 				A9AFBB9D1A68A8DD00B21BD9 /* Photographer.h */,

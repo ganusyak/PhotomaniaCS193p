@@ -7,13 +7,14 @@
 //
 
 #import "GNUPlacePhotosCDTVC.h"
-#import "GNUFlickrFetcher.h"
+
 #import "GNUImageViewController.h"
 #import "GNUImageScrollViewController.h"
 #import "AppDelegate.h"
 #import "GNUFlickrDownloader.h"
 #import "Place.h"
 #import "Photo.h"
+#import "GNUCoreDataKeys.h"
 
 @interface GNUPlacePhotosCDTVC ()
 
@@ -133,10 +134,10 @@
     // All photos (from local databade) for current place, sorted alphabetically
     self.managedObjectContext = self.place.managedObjectContext;
     
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Photo"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:PHOTO_ENTITY];
     
     request.predicate = [NSPredicate predicateWithFormat:@"place.name == %@", self.place.name];
-    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"title" ascending:YES]];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:TITLE_KEY ascending:YES]];
     
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request
                                                                         managedObjectContext:self.managedObjectContext

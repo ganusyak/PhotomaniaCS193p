@@ -10,6 +10,7 @@
 #import "GNUPlacePhotosCDTVC.h"
 #import "AppDelegate.h"
 #import "Place.h"
+#import "GNUCoreDataKeys.h"
 
 @interface GNUPlacesCDTVC ()
 @property (nonatomic, strong) Place *selection;
@@ -41,12 +42,18 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Places Cell" forIndexPath:indexPath];
     
+    cell = [self configureCell:cell atIndexPath:indexPath];
+    
+    return cell;
+}
+
+- (UITableViewCell *)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
     Place *cellPlace = [self.fetchedResultsController objectAtIndexPath:indexPath];
     
     cell.textLabel.text = cellPlace.name;
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%lu photos",(unsigned long)[cellPlace.photos count]];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-    
     return cell;
 }
 
@@ -79,14 +86,14 @@
 - (void)setupFetchedResultsController
 {
     // Flickr most popular places, sectioned by Country name
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Place"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:PLACE_ENTITY];
     
     request.predicate = nil;
-    NSSortDescriptor *countrySortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"country.countryName" ascending:YES selector:@selector(localizedStandardCompare:)];
-    NSSortDescriptor *placeSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"name" ascending:YES selector:@selector(localizedStandardCompare:)];
+    NSSortDescriptor *countrySortDescriptor = [NSSortDescriptor sortDescriptorWithKey:COUNTRY_NAME_KEY_PATH ascending:YES selector:@selector(localizedStandardCompare:)];
+    NSSortDescriptor *placeSortDescriptor = [NSSortDescriptor sortDescriptorWithKey:COUNTRY_NAME_KEY ascending:YES selector:@selector(localizedStandardCompare:)];
     request.sortDescriptors = @[countrySortDescriptor, placeSortDescriptor];
     
-    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:@"country.countryName" cacheName:nil];
+    self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.managedObjectContext sectionNameKeyPath:COUNTRY_NAME_KEY_PATH cacheName:nil];
 }
 
 @end

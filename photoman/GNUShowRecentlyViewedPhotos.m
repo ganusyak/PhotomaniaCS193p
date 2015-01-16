@@ -10,6 +10,7 @@
 #import "GNUImageViewController.h"
 #import "AppDelegate.h"
 #import "Photo.h"
+#import "GNUCoreDataKeys.h"
 
 @interface GNUShowRecentlyViewedPhotos ()
 
@@ -19,6 +20,8 @@
 @end
 
 @implementation GNUShowRecentlyViewedPhotos
+
+static NSString *recentPhotoSegueIdentifier = @"Show Recent Photo";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -34,9 +37,9 @@
 - (void)setupFetchedResultsController
 {
     // Up to 20 photos, opened at least once, sorted by last view time
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Photo"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:PHOTO_ENTITY];
     request.predicate = [NSPredicate predicateWithFormat:@"seen > %d", 0];
-    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"lastOpened" ascending:NO]];
+    request.sortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:LAST_OPENED_KEY ascending:NO]];
     request.fetchLimit = 20;
     self.fetchedResultsController = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:self.context sectionNameKeyPath:nil cacheName:nil];
 }
@@ -45,12 +48,19 @@
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Recent Photos Cell" forIndexPath:indexPath];
 
-    Photo *cellPhoto = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    cell = [self configureCell:cell atIndexPath:indexPath];
 
+    return cell;
+}
+
+- (UITableViewCell *)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath
+{
+    Photo *cellPhoto = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    
     cell.textLabel.text = cellPhoto.title;
     cell.detailTextLabel.text = [self dateStringForDate:cellPhoto.lastOpened];
     cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
-
+    
     return cell;
 }
 
@@ -76,7 +86,7 @@
         GNUImageViewController *detail = self.splitViewController.viewControllers[1];
         detail.photo = self.selection;
     } else {
-        [self performSegueWithIdentifier:@"Show Recent Photo" sender:self];
+        [self performSegueWithIdentifier:recentPhotoSegueIdentifier sender:self];
     }
     
 }
@@ -85,7 +95,7 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    if ([segue.identifier isEqualToString:@"Show Recent Photo"]){
+    if ([segue.identifier isEqualToString:recentPhotoSegueIdentifier]){
         if ([[segue destinationViewController] isKindOfClass:[GNUImageViewController class]]){
             GNUImageViewController *vc = (GNUImageViewController *)[segue destinationViewController];
             [vc setPhoto:self.selection];
