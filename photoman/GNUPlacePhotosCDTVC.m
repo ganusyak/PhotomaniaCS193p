@@ -123,6 +123,7 @@
     
     cell.textLabel.text = cellPhoto.title.length ? cellPhoto.title : cellPhoto.photoDescription;
     cell.detailTextLabel.text = cellPhoto.photoDescription.length ? cellPhoto.photoDescription : @"Empty description";
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }

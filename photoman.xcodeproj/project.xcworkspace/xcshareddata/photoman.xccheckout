@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>1754F3C4-8A0F-4EEE-A77C-09159FFB7685</string>
+	<key>IDESourceControlProjectName</key>
+	<string>photoman</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2BE82CC8A3C68683E75334E0651453849E193E3A</key>
+		<string>https://github.com/ganusyak/PhotomaniaCS193p.git</string>
+		<key>43BF4DB489D24457753DB8BC2035E1AE81C123E5</key>
+		<string>https://github.com/ganusyak/Photomania</string>
+		<key>CF29CB6D787184652C24581D71F6EFDE40DA86A2</key>
+		<string>https://github.com/ganusyak/PhotomaniaProject.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>photoman.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2BE82CC8A3C68683E75334E0651453849E193E3A</key>
+		<string>../..</string>
+		<key>43BF4DB489D24457753DB8BC2035E1AE81C123E5</key>
+		<string>../../../..</string>
+		<key>CF29CB6D787184652C24581D71F6EFDE40DA86A2</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ganusyak/PhotomaniaCS193p.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2BE82CC8A3C68683E75334E0651453849E193E3A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CF29CB6D787184652C24581D71F6EFDE40DA86A2</string>
+			<key>IDESourceControlWCCName</key>
+			<string></string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>43BF4DB489D24457753DB8BC2035E1AE81C123E5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>..</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2BE82CC8A3C68683E75334E0651453849E193E3A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PhotomaniaCS193p</string>
+		</dict>
+	</array>
+</dict>
+</plist>
