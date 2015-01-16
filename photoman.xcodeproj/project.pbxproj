@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A90D7F8919F9BC5C0064A2ED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D7F8819F9BC5C0064A2ED /* main.m */; };
+		A90D7F8C19F9BC5C0064A2ED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D7F8B19F9BC5C0064A2ED /* AppDelegate.m */; };
+		A90D7F8F19F9BC5C0064A2ED /* photoman.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A90D7F8D19F9BC5C0064A2ED /* photoman.xcdatamodeld */; };
+		A90D7F9519F9BC5C0064A2ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A90D7F9319F9BC5C0064A2ED /* Main.storyboard */; };
+		A90D7F9719F9BC5C0064A2ED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A90D7F9619F9BC5C0064A2ED /* Images.xcassets */; };
+		A90D7F9A19F9BC5C0064A2ED /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A90D7F9819F9BC5C0064A2ED /* LaunchScreen.xib */; };
+		A90D7FA619F9BC5C0064A2ED /* photomanTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D7FA519F9BC5C0064A2ED /* photomanTests.m */; };
+		A90D7FE219F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A90D7FE119F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.m */; };
+		A97BF82D19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = A97BF82C19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.m */; };
+		A97BF83D19FDD9F400C44EE0 /* GNUFlickrDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = A97BF83C19FDD9F400C44EE0 /* GNUFlickrDownloader.m */; };
+		A97BF83F19FED71A00C44EE0 /* StoryboardIpad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A97BF83E19FED71A00C44EE0 /* StoryboardIpad.storyboard */; };
+		A9AFBB991A68A8B500B21BD9 /* GNUPlacesCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBB981A68A8B500B21BD9 /* GNUPlacesCDTVC.m */; };
+		A9AFBB9C1A68A8CD00B21BD9 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBB9B1A68A8CD00B21BD9 /* Country.m */; };
+		A9AFBB9F1A68A8DD00B21BD9 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBB9E1A68A8DD00B21BD9 /* Photographer.m */; };
+		A9AFBBA21A68A8EC00B21BD9 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBBA11A68A8EC00B21BD9 /* Photo.m */; };
+		A9AFBBA51A68A8FC00B21BD9 /* Photo+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBBA41A68A8FC00B21BD9 /* Photo+Create.m */; };
+		A9AFBBA81A68A90A00B21BD9 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBBA71A68A90A00B21BD9 /* Photographer+Create.m */; };
+		A9AFBBAB1A68A91B00B21BD9 /* Country+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBBAA1A68A91B00B21BD9 /* Country+Create.m */; };
+		A9AFBBAE1A68A92900B21BD9 /* GNUImageScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBBAD1A68A92900B21BD9 /* GNUImageScrollViewController.m */; };
+		A9AFBBB11A68A9BE00B21BD9 /* Place.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBBB01A68A9BE00B21BD9 /* Place.m */; };
+		A9AFBBB41A68A9CF00B21BD9 /* Place+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = A9AFBBB31A68A9CF00B21BD9 /* Place+Create.m */; };
+		A9D07C351A68B11B009A81B7 /* GNUImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D07C331A68B11B009A81B7 /* GNUImageViewController.m */; };
+		A9D07C381A68B1D9009A81B7 /* GNUFlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D07C371A68B1D9009A81B7 /* GNUFlickrFetcher.m */; };
+		A9D07C441A68B60A009A81B7 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D07C431A68B60A009A81B7 /* CoreDataTableViewController.m */; };
+		A9F0692A19FAC313005A7A12 /* GNUPlacePhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F0692919FAC313005A7A12 /* GNUPlacePhotosCDTVC.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A90D7FA019F9BC5C0064A2ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A90D7F7B19F9BC5C0064A2ED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90D7F8219F9BC5C0064A2ED;
+			remoteInfo = photoman;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A90D7F8319F9BC5C0064A2ED /* photoman.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = photoman.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90D7F8719F9BC5C0064A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90D7F8819F9BC5C0064A2ED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A90D7F8A19F9BC5C0064A2ED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A90D7F8B19F9BC5C0064A2ED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A90D7F8E19F9BC5C0064A2ED /* photoman.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = photoman.xcdatamodel; sourceTree = "<group>"; };
+		A90D7F9419F9BC5C0064A2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A90D7F9619F9BC5C0064A2ED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A90D7F9919F9BC5C0064A2ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		A90D7F9F19F9BC5C0064A2ED /* photomanTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = photomanTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A90D7FA419F9BC5C0064A2ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A90D7FA519F9BC5C0064A2ED /* photomanTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = photomanTests.m; sourceTree = "<group>"; };
+		A90D7FE019F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUMostSeenPhotosCDTVC.h; sourceTree = "<group>"; };
+		A90D7FE119F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUMostSeenPhotosCDTVC.m; sourceTree = "<group>"; };
+		A97BF82B19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUShowRecentlyViewedPhotos.h; sourceTree = "<group>"; };
+		A97BF82C19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUShowRecentlyViewedPhotos.m; sourceTree = "<group>"; };
+		A97BF83B19FDD9F400C44EE0 /* GNUFlickrDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUFlickrDownloader.h; path = photoman/GNUFlickrDownloader.h; sourceTree = "<group>"; };
+		A97BF83C19FDD9F400C44EE0 /* GNUFlickrDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNUFlickrDownloader.m; path = photoman/GNUFlickrDownloader.m; sourceTree = "<group>"; };
+		A97BF83E19FED71A00C44EE0 /* StoryboardIpad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = StoryboardIpad.storyboard; sourceTree = "<group>"; };
+		A9AFBB971A68A8B500B21BD9 /* GNUPlacesCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUPlacesCDTVC.h; sourceTree = "<group>"; };
+		A9AFBB981A68A8B500B21BD9 /* GNUPlacesCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUPlacesCDTVC.m; sourceTree = "<group>"; };
+		A9AFBB9A1A68A8CD00B21BD9 /* Country.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Country.h; path = photoman/Country.h; sourceTree = "<group>"; };
+		A9AFBB9B1A68A8CD00B21BD9 /* Country.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Country.m; path = photoman/Country.m; sourceTree = "<group>"; };
+		A9AFBB9D1A68A8DD00B21BD9 /* Photographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photographer.h; path = photoman/Photographer.h; sourceTree = "<group>"; };
+		A9AFBB9E1A68A8DD00B21BD9 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photographer.m; path = photoman/Photographer.m; sourceTree = "<group>"; };
+		A9AFBBA01A68A8EC00B21BD9 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Photo.h; path = photoman/Photo.h; sourceTree = "<group>"; };
+		A9AFBBA11A68A8EC00B21BD9 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Photo.m; path = photoman/Photo.m; sourceTree = "<group>"; };
+		A9AFBBA31A68A8FC00B21BD9 /* Photo+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photo+Create.h"; path = "photoman/Photo+Create.h"; sourceTree = "<group>"; };
+		A9AFBBA41A68A8FC00B21BD9 /* Photo+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Photo+Create.m"; path = "photoman/Photo+Create.m"; sourceTree = "<group>"; };
+		A9AFBBA61A68A90A00B21BD9 /* Photographer+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Photographer+Create.h"; path = "photoman/Photographer+Create.h"; sourceTree = "<group>"; };
+		A9AFBBA71A68A90A00B21BD9 /* Photographer+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Photographer+Create.m"; path = "photoman/Photographer+Create.m"; sourceTree = "<group>"; };
+		A9AFBBA91A68A91B00B21BD9 /* Country+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Country+Create.h"; path = "photoman/Country+Create.h"; sourceTree = "<group>"; };
+		A9AFBBAA1A68A91B00B21BD9 /* Country+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Country+Create.m"; path = "photoman/Country+Create.m"; sourceTree = "<group>"; };
+		A9AFBBAC1A68A92900B21BD9 /* GNUImageScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUImageScrollViewController.h; sourceTree = "<group>"; };
+		A9AFBBAD1A68A92900B21BD9 /* GNUImageScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUImageScrollViewController.m; sourceTree = "<group>"; };
+		A9AFBBAF1A68A9BE00B21BD9 /* Place.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Place.h; path = photoman/Place.h; sourceTree = "<group>"; };
+		A9AFBBB01A68A9BE00B21BD9 /* Place.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Place.m; path = photoman/Place.m; sourceTree = "<group>"; };
+		A9AFBBB21A68A9CF00B21BD9 /* Place+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Place+Create.h"; path = "photoman/Place+Create.h"; sourceTree = "<group>"; };
+		A9AFBBB31A68A9CF00B21BD9 /* Place+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Place+Create.m"; path = "photoman/Place+Create.m"; sourceTree = "<group>"; };
+		A9D07C331A68B11B009A81B7 /* GNUImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUImageViewController.m; sourceTree = "<group>"; };
+		A9D07C341A68B11B009A81B7 /* GNUImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUImageViewController.h; sourceTree = "<group>"; };
+		A9D07C361A68B1D9009A81B7 /* GNUFlickrFetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GNUFlickrFetcher.h; path = photoman/GNUFlickrFetcher.h; sourceTree = "<group>"; };
+		A9D07C371A68B1D9009A81B7 /* GNUFlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GNUFlickrFetcher.m; path = photoman/GNUFlickrFetcher.m; sourceTree = "<group>"; };
+		A9D07C421A68B60A009A81B7 /* CoreDataTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataTableViewController.h; sourceTree = "<group>"; };
+		A9D07C431A68B60A009A81B7 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
+		A9F0692819FAC313005A7A12 /* GNUPlacePhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GNUPlacePhotosCDTVC.h; sourceTree = "<group>"; };
+		A9F0692919FAC313005A7A12 /* GNUPlacePhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GNUPlacePhotosCDTVC.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A90D7F8019F9BC5C0064A2ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90D7F9C19F9BC5C0064A2ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A90D7F7A19F9BC5C0064A2ED = {
+			isa = PBXGroup;
+			children = (
+				A9D07C421A68B60A009A81B7 /* CoreDataTableViewController.h */,
+				A9D07C431A68B60A009A81B7 /* CoreDataTableViewController.m */,
+				A90D7F8519F9BC5C0064A2ED /* photoman */,
+				A90D7FA219F9BC5C0064A2ED /* photomanTests */,
+				A90D7F8419F9BC5C0064A2ED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A90D7F8419F9BC5C0064A2ED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A90D7F8319F9BC5C0064A2ED /* photoman.app */,
+				A90D7F9F19F9BC5C0064A2ED /* photomanTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A90D7F8519F9BC5C0064A2ED /* photoman */ = {
+			isa = PBXGroup;
+			children = (
+				A9AFBB691A686F5A00B21BD9 /* AppDelegate */,
+				A90D7FDC19F9C1270064A2ED /* View Controllers */,
+				A90D7FD619F9C0A20064A2ED /* Flickr Interface */,
+				A90D7FD719F9C0C20064A2ED /* Core Data stuff */,
+				A90D7F9319F9BC5C0064A2ED /* Main.storyboard */,
+				A97BF83E19FED71A00C44EE0 /* StoryboardIpad.storyboard */,
+				A90D7F9819F9BC5C0064A2ED /* LaunchScreen.xib */,
+				A90D7F9619F9BC5C0064A2ED /* Images.xcassets */,
+				A97BF82E19FDB7BF00C44EE0 /* Under Construction */,
+				A90D7F8619F9BC5C0064A2ED /* Supporting Files */,
+			);
+			path = photoman;
+			sourceTree = "<group>";
+		};
+		A90D7F8619F9BC5C0064A2ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A90D7F8719F9BC5C0064A2ED /* Info.plist */,
+				A90D7F8819F9BC5C0064A2ED /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A90D7FA219F9BC5C0064A2ED /* photomanTests */ = {
+			isa = PBXGroup;
+			children = (
+				A90D7FA519F9BC5C0064A2ED /* photomanTests.m */,
+				A90D7FA319F9BC5C0064A2ED /* Supporting Files */,
+			);
+			path = photomanTests;
+			sourceTree = "<group>";
+		};
+		A90D7FA319F9BC5C0064A2ED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A90D7FA419F9BC5C0064A2ED /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A90D7FD619F9C0A20064A2ED /* Flickr Interface */ = {
+			isa = PBXGroup;
+			children = (
+				A9D07C361A68B1D9009A81B7 /* GNUFlickrFetcher.h */,
+				A9D07C371A68B1D9009A81B7 /* GNUFlickrFetcher.m */,
+				A97BF83B19FDD9F400C44EE0 /* GNUFlickrDownloader.h */,
+				A97BF83C19FDD9F400C44EE0 /* GNUFlickrDownloader.m */,
+			);
+			name = "Flickr Interface";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A90D7FD719F9C0C20064A2ED /* Core Data stuff */ = {
+			isa = PBXGroup;
+			children = (
+				A90D7FD819F9C1080064A2ED /* CoreDataTableViewController */,
+				A90D7F8D19F9BC5C0064A2ED /* photoman.xcdatamodeld */,
+				A9AFBB9A1A68A8CD00B21BD9 /* Country.h */,
+				A9AFBB9B1A68A8CD00B21BD9 /* Country.m */,
+				A9AFBB9D1A68A8DD00B21BD9 /* Photographer.h */,
+				A9AFBB9E1A68A8DD00B21BD9 /* Photographer.m */,
+				A9AFBBAF1A68A9BE00B21BD9 /* Place.h */,
+				A9AFBBB01A68A9BE00B21BD9 /* Place.m */,
+				A9AFBBA01A68A8EC00B21BD9 /* Photo.h */,
+				A9AFBBA11A68A8EC00B21BD9 /* Photo.m */,
+				A9AFBBA31A68A8FC00B21BD9 /* Photo+Create.h */,
+				A9AFBBA41A68A8FC00B21BD9 /* Photo+Create.m */,
+				A9AFBBA61A68A90A00B21BD9 /* Photographer+Create.h */,
+				A9AFBBA71A68A90A00B21BD9 /* Photographer+Create.m */,
+				A9AFBBA91A68A91B00B21BD9 /* Country+Create.h */,
+				A9AFBBAA1A68A91B00B21BD9 /* Country+Create.m */,
+				A9AFBBB21A68A9CF00B21BD9 /* Place+Create.h */,
+				A9AFBBB31A68A9CF00B21BD9 /* Place+Create.m */,
+			);
+			name = "Core Data stuff";
+			path = ..;
+			sourceTree = "<group>";
+		};
+		A90D7FD819F9C1080064A2ED /* CoreDataTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreDataTableViewController;
+			path = "../Core data plus downloadTask/Core data plus downloadTask/CoreDataTableViewController";
+			sourceTree = "<group>";
+		};
+		A90D7FDC19F9C1270064A2ED /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A9AFBB971A68A8B500B21BD9 /* GNUPlacesCDTVC.h */,
+				A9AFBB981A68A8B500B21BD9 /* GNUPlacesCDTVC.m */,
+				A9D07C331A68B11B009A81B7 /* GNUImageViewController.m */,
+				A9D07C341A68B11B009A81B7 /* GNUImageViewController.h */,
+				A9F0692819FAC313005A7A12 /* GNUPlacePhotosCDTVC.h */,
+				A9F0692919FAC313005A7A12 /* GNUPlacePhotosCDTVC.m */,
+				A97BF82B19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.h */,
+				A97BF82C19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A97BF82E19FDB7BF00C44EE0 /* Under Construction */ = {
+			isa = PBXGroup;
+			children = (
+				A90D7FE019F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.h */,
+				A90D7FE119F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.m */,
+				A9AFBBAC1A68A92900B21BD9 /* GNUImageScrollViewController.h */,
+				A9AFBBAD1A68A92900B21BD9 /* GNUImageScrollViewController.m */,
+			);
+			name = "Under Construction";
+			sourceTree = "<group>";
+		};
+		A9AFBB691A686F5A00B21BD9 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				A90D7F8A19F9BC5C0064A2ED /* AppDelegate.h */,
+				A90D7F8B19F9BC5C0064A2ED /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A90D7F8219F9BC5C0064A2ED /* photoman */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90D7FA919F9BC5C0064A2ED /* Build configuration list for PBXNativeTarget "photoman" */;
+			buildPhases = (
+				A90D7F7F19F9BC5C0064A2ED /* Sources */,
+				A90D7F8019F9BC5C0064A2ED /* Frameworks */,
+				A90D7F8119F9BC5C0064A2ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = photoman;
+			productName = photoman;
+			productReference = A90D7F8319F9BC5C0064A2ED /* photoman.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A90D7F9E19F9BC5C0064A2ED /* photomanTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A90D7FAC19F9BC5C0064A2ED /* Build configuration list for PBXNativeTarget "photomanTests" */;
+			buildPhases = (
+				A90D7F9B19F9BC5C0064A2ED /* Sources */,
+				A90D7F9C19F9BC5C0064A2ED /* Frameworks */,
+				A90D7F9D19F9BC5C0064A2ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A90D7FA119F9BC5C0064A2ED /* PBXTargetDependency */,
+			);
+			name = photomanTests;
+			productName = photomanTests;
+			productReference = A90D7F9F19F9BC5C0064A2ED /* photomanTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A90D7F7B19F9BC5C0064A2ED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Yuriy Ganusyak";
+				TargetAttributes = {
+					A90D7F8219F9BC5C0064A2ED = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					A90D7F9E19F9BC5C0064A2ED = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = A90D7F8219F9BC5C0064A2ED;
+					};
+				};
+			};
+			buildConfigurationList = A90D7F7E19F9BC5C0064A2ED /* Build configuration list for PBXProject "photoman" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A90D7F7A19F9BC5C0064A2ED;
+			productRefGroup = A90D7F8419F9BC5C0064A2ED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A90D7F8219F9BC5C0064A2ED /* photoman */,
+				A90D7F9E19F9BC5C0064A2ED /* photomanTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A90D7F8119F9BC5C0064A2ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90D7F9519F9BC5C0064A2ED /* Main.storyboard in Resources */,
+				A90D7F9A19F9BC5C0064A2ED /* LaunchScreen.xib in Resources */,
+				A90D7F9719F9BC5C0064A2ED /* Images.xcassets in Resources */,
+				A97BF83F19FED71A00C44EE0 /* StoryboardIpad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90D7F9D19F9BC5C0064A2ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A90D7F7F19F9BC5C0064A2ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9AFBBA81A68A90A00B21BD9 /* Photographer+Create.m in Sources */,
+				A9AFBBA21A68A8EC00B21BD9 /* Photo.m in Sources */,
+				A9AFBBAE1A68A92900B21BD9 /* GNUImageScrollViewController.m in Sources */,
+				A9AFBB9F1A68A8DD00B21BD9 /* Photographer.m in Sources */,
+				A9AFBB9C1A68A8CD00B21BD9 /* Country.m in Sources */,
+				A97BF83D19FDD9F400C44EE0 /* GNUFlickrDownloader.m in Sources */,
+				A9AFBBB11A68A9BE00B21BD9 /* Place.m in Sources */,
+				A9D07C381A68B1D9009A81B7 /* GNUFlickrFetcher.m in Sources */,
+				A90D7F8C19F9BC5C0064A2ED /* AppDelegate.m in Sources */,
+				A90D7FE219F9C2AC0064A2ED /* GNUMostSeenPhotosCDTVC.m in Sources */,
+				A90D7F8F19F9BC5C0064A2ED /* photoman.xcdatamodeld in Sources */,
+				A9AFBBAB1A68A91B00B21BD9 /* Country+Create.m in Sources */,
+				A9F0692A19FAC313005A7A12 /* GNUPlacePhotosCDTVC.m in Sources */,
+				A9AFBBA51A68A8FC00B21BD9 /* Photo+Create.m in Sources */,
+				A9D07C441A68B60A009A81B7 /* CoreDataTableViewController.m in Sources */,
+				A90D7F8919F9BC5C0064A2ED /* main.m in Sources */,
+				A9D07C351A68B11B009A81B7 /* GNUImageViewController.m in Sources */,
+				A9AFBB991A68A8B500B21BD9 /* GNUPlacesCDTVC.m in Sources */,
+				A9AFBBB41A68A9CF00B21BD9 /* Place+Create.m in Sources */,
+				A97BF82D19FDB55B00C44EE0 /* GNUShowRecentlyViewedPhotos.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A90D7F9B19F9BC5C0064A2ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A90D7FA619F9BC5C0064A2ED /* photomanTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A90D7FA119F9BC5C0064A2ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A90D7F8219F9BC5C0064A2ED /* photoman */;
+			targetProxy = A90D7FA019F9BC5C0064A2ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A90D7F9319F9BC5C0064A2ED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90D7F9419F9BC5C0064A2ED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A90D7F9819F9BC5C0064A2ED /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A90D7F9919F9BC5C0064A2ED /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A90D7FA719F9BC5C0064A2ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A90D7FA819F9BC5C0064A2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A90D7FAA19F9BC5C0064A2ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = photoman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A90D7FAB19F9BC5C0064A2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = photoman/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A90D7FAD19F9BC5C0064A2ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = photomanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photoman.app/photoman";
+			};
+			name = Debug;
+		};
+		A90D7FAE19F9BC5C0064A2ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = photomanTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/photoman.app/photoman";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A90D7F7E19F9BC5C0064A2ED /* Build configuration list for PBXProject "photoman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90D7FA719F9BC5C0064A2ED /* Debug */,
+				A90D7FA819F9BC5C0064A2ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90D7FA919F9BC5C0064A2ED /* Build configuration list for PBXNativeTarget "photoman" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90D7FAA19F9BC5C0064A2ED /* Debug */,
+				A90D7FAB19F9BC5C0064A2ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A90D7FAC19F9BC5C0064A2ED /* Build configuration list for PBXNativeTarget "photomanTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A90D7FAD19F9BC5C0064A2ED /* Debug */,
+				A90D7FAE19F9BC5C0064A2ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A90D7F8D19F9BC5C0064A2ED /* photoman.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A90D7F8E19F9BC5C0064A2ED /* photoman.xcdatamodel */,
+			);
+			currentVersion = A90D7F8E19F9BC5C0064A2ED /* photoman.xcdatamodel */;
+			name = photoman.xcdatamodeld;
+			path = photoman/photoman.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = A90D7F7B19F9BC5C0064A2ED /* Project object */;
+}
