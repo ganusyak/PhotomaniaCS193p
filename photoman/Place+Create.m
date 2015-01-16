@@ -8,12 +8,13 @@
 
 #import "Place+Create.h"
 #import "Country+Create.h"
+#import "GNUCoreDataKeys.h"
 
 @implementation Place (Create)
 
 + (NSString *)countryNameForPlace:(NSDictionary *)placeDescription
 {
-    NSString *contentString = [placeDescription valueForKey:@"_content"];
+    NSString *contentString = [placeDescription valueForKey:PLACE_CONTENT_KEY];
     NSArray *contentStringComponents = [contentString componentsSeparatedByString:@", "];
     return [contentStringComponents lastObject];
 }
@@ -22,8 +23,8 @@
 {
     Place *newPlace = nil;
     
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Place"];
-    request.predicate = [NSPredicate predicateWithFormat:@"placeID == %@", [placeDescription valueForKey:@"place_id"]];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:PLACE_ENTITY];
+    request.predicate = [NSPredicate predicateWithFormat:@"placeID == %@", [placeDescription valueForKey:PLACE_ID]];
     
     NSError *error = nil;
     NSArray *fetchResults = [context executeFetchRequest:request error:&error];
@@ -34,11 +35,11 @@
         return [fetchResults firstObject]; // return existing place
     } else {
         // add new Place to database
-        newPlace = [NSEntityDescription insertNewObjectForEntityForName:@"Place"
+        newPlace = [NSEntityDescription insertNewObjectForEntityForName:PLACE_ENTITY
                                                  inManagedObjectContext:context];
         
-        newPlace.placeID = [placeDescription valueForKey:@"place_id"];
-        newPlace.name = [placeDescription valueForKey:@"woe_name"];
+        newPlace.placeID = [placeDescription valueForKey:PLACE_ID];
+        newPlace.name = [placeDescription valueForKey:PLACE_NAME];
         NSString *countryName = [self countryNameForPlace:placeDescription];
         newPlace.country = [Country insertCountryWithName:countryName
                                    inManagedObjectContext:context];

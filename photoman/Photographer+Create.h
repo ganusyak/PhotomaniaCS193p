@@ -7,7 +7,6 @@
 //
 
 #import "Photographer.h"
-#define PHOTOGRAPHER_ENTITY @"Photographer"
 @interface Photographer (Create)
 
 + (Photographer *)insertPhotographerWithName:(NSString *)name inManagedObjectContext:(NSManagedObjectContext *)context;

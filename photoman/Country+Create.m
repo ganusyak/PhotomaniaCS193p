@@ -7,6 +7,7 @@
 //
 
 #import "Country+Create.h"
+#import "GNUCoreDataKeys.h"
 
 @implementation Country (Create)
 
@@ -14,7 +15,7 @@
 {
     Country *country = nil;
     
-    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:@"Country"];
+    NSFetchRequest *request = [[NSFetchRequest alloc] initWithEntityName:COUNTRY_ENTITY];
     request.predicate = [NSPredicate predicateWithFormat:@"countryName == %@", countryName];
     
     NSError *error = nil;
@@ -22,14 +23,13 @@
     NSArray *fetchResults = [context executeFetchRequest:request error:&error];
     
     if (error || !fetchResults || fetchResults.count > 1){
-        // handle errors
+        // TODO: handle errors
     } else if (fetchResults.count) {
         return [fetchResults firstObject]; // return existing object
     } else {
         // add new country with countryName
-        country = [NSEntityDescription insertNewObjectForEntityForName:@"Country" inManagedObjectContext:context];
+        country = [NSEntityDescription insertNewObjectForEntityForName:COUNTRY_ENTITY inManagedObjectContext:context];
         country.countryName = countryName;
-        //NSLog(@"%@", country.countryName);
     }
     
     return country;

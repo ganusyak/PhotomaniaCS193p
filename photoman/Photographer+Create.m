@@ -7,6 +7,7 @@
 //
 
 #import "Photographer+Create.h"
+#import "GNUCoreDataKeys.h"
 
 @implementation Photographer (Create)
 
